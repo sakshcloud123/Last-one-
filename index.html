@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Chinmay ♡</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --cream: #fffaf2;
+  --ivory: #f8f3e9;
+  --green: #a8b89b;
+  --pink: #d9a6a7;
+  --gold: #c7a36a;
+  --brown: #685348;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--brown);
+  background: linear-gradient(140deg, var(--cream), #f5eee5, #f8e9e7);
+  font-family: 'Cormorant Garamond', serif;
+  text-align: center;
+}
+
+section {
+  padding: 65px 18px;
+  max-width: 850px;
+  margin: auto;
+}
+
+h1, h2, h3 {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: clamp(45px, 10vw, 76px);
+  margin: 18px 0;
+}
+
+h2 {
+  font-size: clamp(30px, 7vw, 43px);
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.script {
+  font-family: 'Dancing Script', cursive;
+  color: #a77c72;
+}
+
+.card {
+  padding: 28px 22px;
+  margin: 25px auto;
+  background: rgba(255,255,255,.65);
+  border: 1px solid #ead9c8;
+  border-radius: 25px;
+  box-shadow: 0 12px 35px rgba(105,76,59,.07);
+}
+
+button {
+  border: none;
+  border-radius: 30px;
+  padding: 14px 25px;
+  margin: 8px;
+  font-family: inherit;
+  font-size: 19px;
+  cursor: pointer;
+  color: white;
+  background: var(--green);
+  transition: .3s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+}
+
+.pink-button {
+  background: var(--pink);
+}
+
+.gold-button {
+  background: var(--gold);
+}
+
+.photo {
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  max-height: 78vh;
+  object-fit: contain;
+  margin: 25px auto;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px #765a4220;
+}
+
+.divider {
+  color: var(--gold);
+  letter-spacing: 10px;
+  font-size: 22px;
+  margin: 20px;
+}
+
+.hero {
+  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 35px;
+}
+
+.small-text {
+  font-size: 16px;
+  opacity: .8;
+}
+
+.heart-decoration {
+  color: var(--pink);
+  font-size: 25px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-9px); }
+}
+
+.gift-box {
+  width: 180px;
+  height: 145px;
+  position: relative;
+  margin: 35px auto 15px;
+  cursor: pointer;
+  animation: float 3s ease-in-out infinite;
+}
+
+.gift-base {
+  position: absolute;
+  bottom: 0;
+  width: 180px;
+  height: 110px;
+  border-radius: 8px;
+  background: #d9a6a7;
+  border: 2px solid #c98e91;
+}
+
+.gift-ribbon {
+  position: absolute;
+  left: 70px;
+  top: 35px;
+  height: 110px;
+  width: 40px;
+  background: #f5e5bf;
+}
+
+.gift-lid {
+  position: absolute;
+  top: 25px;
+  left: -8px;
+  width: 196px;
+  height: 35px;
+  border-radius: 7px;
+  background: #c98e91;
+  transition: transform .8s ease;
+  transform-origin: left bottom;
+}
+
+.gift-bow {
+  position: absolute;
+  top: 0;
+  left: 63px;
+  width: 55px;
+  height: 30px;
+  border: 9px solid var(--gold);
+  border-radius: 50% 50% 0 50%;
+  transform: rotate(-20deg);
+}
+
+.gift-box.open .gift-lid {
+  transform: translate(-20px, -50px) rotate(-25deg);
+}
+
+#giftMessage {
+  display: none;
+  animation: appear 1s ease;
+}
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+footer {
+  padding: 40px 15px;
+  color: #967c6e;
+}
+
+@media (max-width: 500px) {
+  section { padding: 48px 16px; }
+  .card { padding: 24px 17px; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1: WELCOME -->
+
+<section class="hero">
+  <div class="heart-decoration">♡ ✧ ♡</div>
+
+  <p class="script" style="font-size:30px">
+    A little something made with love
+  </p>
+
+  <h1>Hey, Chinmay!</h1>
+
+  <p>
+    To my favourite person,<br>
+    my sweetest distraction,<br>
+    and my forever kind of love.
+  </p>
+
+  <div class="divider">✧ ♡ ✧</div>
+
+  <button onclick="document.getElementById('ourStory').scrollIntoView({behavior:'smooth'})">
+    Come inside, bubu ♡
+  </button>
+
+  <p class="small-text">Psst... this little world belongs to you.</p>
+</section>
+
+
+<!-- PAGE 2: OUR PHOTO AND STORY -->
+
+<section id="ourStory">
+  <p class="script" style="font-size:29px">Chapter One</p>
+
+  <h2>My favourite person</h2>
+
+  <div class="card">
+    <p>
+      My Chinmay, if someone asked me about one of the most
+      beautiful parts of my life, I would tell them about us.
+    </p>
+
+    <p>
+      Since we met on 15 May 2023, we have collected memories,
+      laughter, silly moments, and feelings that words can
+      never completely explain.
+    </p>
+
+    <!-- Upload your photo to GitHub as couple.jpg -->
+    <img
+      src="couple.jpg"
+      class="photo"
+      alt="Our favourite memory together"
+      onerror="this.style.display='none';document.getElementById('photoHelp').style.display='block'"
+    >
+
+    <p id="photoHelp" style="display:none;font-size:16px">
+      Add your couple photo to this repository and name it
+      <b>couple.jpg</b> to display it here.
+    </p>
+
+    <p class="script" style="font-size:30px">
+      If I could keep one feeling forever, it would be us. ♡
+    </p>
+  </div>
+</section>
+
+
+<!-- PAGE 3: ROMANTIC MESSAGE -->
+
+<section>
+  <p class="script" style="font-size:29px">Chapter Two</p>
+
+  <h2>Things I want you to know</h2>
+
+  <div class="card">
+    <p>
+      Chinmay baby, you mean so much more to me than I can
+      explain in one birthday message.
+    </p>
+
+    <p>
+      I love the little things about you. The way you make
+      ordinary moments memorable, the memories we share,
+      the laughter that comes out of nowhere, and the way
+      a simple conversation with you can become my favourite
+      part of a day.
+    </p>
+
+    <p>
+      We may not have a perfect story every single day,
+      but our story is ours. And that makes it special to me.
+    </p>
+
+    <p class="script" style="font-size:34px">
+      You are my bubu, my love, my Chinmay. ♡
+    </p>
+  </div>
+</section>
+
+
+<!-- PAGE 4: SONG -->
+
+<section>
+  <p class="script" style="font-size:29px">Chapter Three</p>
+
+  <h2>Our little soundtrack ♫</h2>
+
+  <div class="card">
+    <p>
+      Some feelings are difficult to put into words,
+      so here is a song for you.
+    </p>
+
+    <h2 class="script">I Wanna Be Yours</h2>
+
+    <p>Arctic Monkeys</p>
+
+    <button class="pink-button"
+      onclick="window.open('https://open.spotify.com/search/I%20Wanna%20Be%20Yours%20Arctic%20Monkeys','_blank')">
+      Play our song ♫
+    </button>
+
+    <p class="small-text">
+      Opens Spotify so you can listen to the song.
+    </p>
+  </div>
+</section>
+
+
+<!-- PAGE 5: MYSTERY GIFT -->
+
+<section id="gift">
+  <p class="script" style="font-size:29px">Chapter Four</p>
+
+  <h2>A little mystery for you 🎁</h2>
+
+  <div class="card">
+    <p>
+      Okay, birthday boy... I have one last little surprise
+      for you.
+    </p>
+
+    <p>
+      It is not something you can hold in your hands.
+      It is something I have been wanting you to know.
+    </p>
+
+    <p class="small-text">
+      Tap the gift to untie the ribbon and reveal your surprise.
+    </p>
+
+    <div class="gift-box" id="giftBox" onclick="openGift()">
+      <div class="gift-base"></div>
+      <div class="gift-ribbon"></div>
+      <div class="gift-lid"></div>
+      <div class="gift-bow"></div>
+    </div>
+
+    <button class="gold-button" onclick="openGift()">
+      Open your gift ♡
+    </button>
+
+    <div id="giftMessage">
+      <div class="divider">✧ ♡ ✧</div>
+
+      <h2 class="script">Surprise, my love!</h2>
+
+      <p>
+        If I could wrap up all the little things I love about you
+        and put them in this box, it would never be big enough.
+      </p>
+
+      <p>
+        So instead, I am giving you these words:
+        you matter to me, you are special to me,
+        and I am grateful for the memories we have made.
+      </p>
+
+      <p>
+        Happy birthday, Chinmay baby.
+        May this new year of your life bring you happiness,
+        peace, success, laughter, and all the beautiful
+        things your heart deserves.
+      </p>
+
+      <p class="script" style="font-size:36px">
+        With all my love, always. ♡
+      </p>
+
+      <div class="heart-decoration">♡ ♡ ♡</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- FINAL MESSAGE -->
+
+<section>
+  <div class="card">
+    <p class="script" style="font-size:34px">
+      And that is my little world for you.
+    </p>
+
+    <h2>Happy Birthday, Chinmay! ♡</h2>
+
+    <p>
+      No website could ever hold everything I feel for you.
+      But I hope this little surprise reminds you how loved
+      and special you are.
+    </p>
+
+    <p>Forever your girl,</p>
+
+    <h2 class="script">Your Pree ♡</h2>
+  </div>
+</section>
+
+<footer>
+  Made with love, just for Chinmay<br>
+  <span class="script" style="font-size:25px">Our story, our memories, us.</span>
+</footer>
+
+
+<script>
+function openGift() {
+  document.getElementById("giftBox").classList.add("open");
+
+  const message = document.getElementById("giftMessage");
+  message.style.display = "block";
+
+  setTimeout(() => {
+    message.scrollIntoView({behavior:"smooth", block:"center"});
+  }, 350);
+}
+</script>
+
+</body>
+  </html>
